@@ -15,3 +15,10 @@ typedef struct complex{
 
 // Implémentation des primitives
 
+complex C_new (double r, double i) {
+  complex c;
+  c.r = r;
+  c.i = i;
+  return c;
+}
+
