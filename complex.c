@@ -13,3 +13,5 @@ typedef struct complex{
   float i; // Partiie Imaginaire
 } complex;
 
+// Implémentation des primitives
+
