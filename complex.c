@@ -42,3 +42,7 @@ double  C_module (complex c) {
   return m;
 }
 
+bool C_compare (complex a, complex b) {
+  return a.r == b.r && a.i == b.i;  
+}
+
