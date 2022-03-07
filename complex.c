@@ -29,3 +29,9 @@ complex C_add (complex a,  complex b) {
   return c;
 }
 
+complex C_mul (complex a,  complex b) {
+  complex c;
+  c.r = (a.r * b.r) - (a.i * b.i);
+  c.i = (a.i * b.r) + (a.r * b.i);
+  return c;
+}
