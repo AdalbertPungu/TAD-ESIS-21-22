@@ -46,3 +46,6 @@ bool C_compare (complex a, complex b) {
   return a.r == b.r && a.i == b.i;  
 }
 
+void C_print(complex a) {
+  printf("(r=%.1f, i=%.1f)\n", a.r, a.i);
+}
