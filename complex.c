@@ -22,3 +22,10 @@ complex C_new (double r, double i) {
   return c;
 }
 
+complex C_add (complex a,  complex b) {
+  complex c;
+  c.r = a.r + b.r;
+  c.i = a.i + b.i;
+  return c;
+}
+
