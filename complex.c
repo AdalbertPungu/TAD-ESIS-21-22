@@ -35,3 +35,10 @@ complex C_mul (complex a,  complex b) {
   c.i = (a.i * b.r) + (a.r * b.i);
   return c;
 }
+
+double  C_module (complex c) {
+  double m;
+  m = sqrt(pow(c.r, 2) + pow(c.i, 2));
+  return m;
+}
+
