@@ -65,3 +65,11 @@ void supprimer(TasMin *t){
     }
 
 }
+
+char filsG(TasMin *t, int s) {
+  if(s*2 <= t->taille)
+    return t->arbre[s*2];
+  else
+    return '-';
+}
+
