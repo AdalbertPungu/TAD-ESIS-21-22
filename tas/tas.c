@@ -19,3 +19,7 @@ void entasser(TasMin *t, char x) {
   t->arbre[t->s] = x;
   reorganiserAsc(t);
 }
+
+void reorganiserAsc(TasMin *t) {
+  
+}
