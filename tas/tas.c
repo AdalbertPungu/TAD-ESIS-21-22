@@ -35,3 +35,6 @@ void reorganiserAsc(TasMin *t, int s) {
   }
 }
 
+char pere(TasMin *t, int s) {
+  return t->arbre[s/2];
+}
