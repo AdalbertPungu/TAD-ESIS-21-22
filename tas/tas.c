@@ -80,3 +80,6 @@ void reorganisrDsc(TasMin *t, int s) {
   
 }
 
+char getValeur(TasMin *t, int s) {
+  return t->arbre[s];
+}
