@@ -66,3 +66,17 @@ char filsD(TasMin *t, int s) {
     return '-';
 }
 
+void reorganisrDsc(TasMin *t, int s) {
+  char fg = filsG(t, s);
+  char fd = filsD(t, s);
+  char v = getValeur(t, s);
+  if ((fg != VIDE && fd != VIDE && fg <= fd && fg < v) || (fg != VIDE && fg < v)) {
+    permuter(t, s, s*2+1);
+    reorganisrDsc(t, s*2+1);
+  } else if (fd != VIDE && fd < v) {
+    permuter(t, s, s*2);
+    reorganisrDsc(t, s*2);
+  } 
+  
+}
+
