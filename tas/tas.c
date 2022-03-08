@@ -10,3 +10,7 @@ void creerTas(TasMin *t, char x) {
 char valeur(TasMin *t) {
   return t->arbre[1];
 }
+
+void entasser(TasMin *t, char x) {
+  
+}
