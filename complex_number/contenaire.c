@@ -42,3 +42,13 @@ void detruireContenaire(Objet tab[], int n){
     }
 }
 
+Complex  valeurContenaire(Objet tab[], int n ){
+    for (int i = 0; i<n;i++){
+        if(tab[i].b){
+            return tab[i].c;
+        }
+    }
+    Complex c;
+    return c;
+}
+
