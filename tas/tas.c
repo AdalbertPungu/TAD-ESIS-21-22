@@ -39,8 +39,12 @@ char pere(TasMin *t, int s) {
   return t->arbre[s/2];
 }
 
-char permuter(TasMin *t, int s2) {
+char permuter(TasMin *t, int s1, int s2) {
   char a = t->arbre[s1];
   t->arbre[s1] = t->arbre[s2];
   t->arbre[s2] = a;
+}
+
+void supprimer(TasMin *t){
+
 }
