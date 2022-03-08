@@ -73,3 +73,9 @@ char filsG(TasMin *t, int s) {
     return '-';
 }
 
+char filsD(TasMin *t, int s) {
+  if(s*2+1 <= t->taille)
+    return t->arbre[s*2+1];
+  else
+    return '-';
+}
