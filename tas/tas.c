@@ -46,24 +46,10 @@ char permuter(TasMin *t, int s1, int s2) {
 }
 
 void supprimer(TasMin *t){
-    int pos = t->s;
-    if(pos >1){
-        int index_p = 1;
-        t->arbre[1] = t->arbre[pos-1];
-        char p = t->arbre[index_p];
-        char fg = t->arbre[index_p * 2];
-        char fd = t->arbre[index_p * 2 + 1];
-        if(fg < fd && fg < p){
-            t->arbre[index_p * 2] = p;
-            t->arbre[index_p] = fg;
-        }
-        if(fd < fg && fd < p){
-            t->arbre[index_p * 2 + 1] = p;
-            t->arbre[index_p];
-        }
-        t->s --;
-    }
-
+    t->taille --;
+    t->arbre[RACINE] = t->arbre[t->s];
+    t->s --;
+    reorganisrDsc(t, RACINE);
 }
 
 char filsG(TasMin *t, int s) {
@@ -79,3 +65,4 @@ char filsD(TasMin *t, int s) {
   else
     return '-';
 }
+
