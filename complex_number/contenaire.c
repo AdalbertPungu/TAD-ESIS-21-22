@@ -34,3 +34,11 @@ void ajoutContenaire(Objet tab[], int n, Complex c ){
     }
 }
 
+
+
+void detruireContenaire(Objet tab[], int n){
+    for (int i= 0;i<n;i++){
+        tab[i].b = false;
+    }
+}
+
