@@ -17,3 +17,9 @@ typedef struct objet{
 } Objet;
 
 Objet tab[Dim];
+
+void createContenaire(Objet tab[], int n){
+    for (int i= 0;i<n;i++){
+        tab[i].b = false;
+    }
+}
