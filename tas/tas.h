@@ -20,4 +20,5 @@ char pere(TasMin *t, int s);
 char permuter(TasMin *t, int s1, int s2);
 char filsG(TasMin *t, int s);
 char filsD(TasMin *t, int s);
-
+char getValeur(TasMin *t, int s);
+void reorganisrDsc(TasMin *t, int s);
