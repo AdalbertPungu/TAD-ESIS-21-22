@@ -10,3 +10,10 @@ typedef struct TasMin
   int taille;
 } TasMin;
 
+void creerTas(TasMin *t, char x);
+char valeur(TasMin *t);
+void entasser(TasMin *t, char x);
+
+void reorganiserAsc(TasMin *t, int s);
+char pere(TasMin *t, int s);
+char permuter(TasMin *t, int s2);
