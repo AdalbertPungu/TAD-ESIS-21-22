@@ -3,6 +3,7 @@
 
 #define T_MAX 100
 #define RACINE 1
+#define VIDE 1
 typedef struct TasMin
 {
   int arbre[T_MAX];
@@ -17,3 +18,6 @@ void supprimer(TasMin *t);
 void reorganiserAsc(TasMin *t, int s);
 char pere(TasMin *t, int s);
 char permuter(TasMin *t, int s1, int s2);
+char filsG(TasMin *t, int s);
+char filsD(TasMin *t, int s);
+
