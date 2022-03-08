@@ -3,10 +3,10 @@
 
 #define T_MAX 100
 
-typedef struct tasMin
+typedef struct TasMin
 {
   int  arbre[T_MAX];
   int s;
   int taille;
-} tasMin;
+} TasMin;
 
