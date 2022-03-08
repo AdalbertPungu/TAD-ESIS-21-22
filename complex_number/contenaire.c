@@ -23,3 +23,14 @@ void createContenaire(Objet tab[], int n){
         tab[i].b = false;
     }
 }
+
+void ajoutContenaire(Objet tab[], int n, Complex c ){
+    for (int i = 0; i<n;i++){
+        if(tab[i].b == false){
+            tab[i].c = c;
+            tab[i].b == true;
+            break;
+        }
+    }
+}
+
