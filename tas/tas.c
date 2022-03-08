@@ -20,6 +20,18 @@ void entasser(TasMin *t, char x) {
   reorganiserAsc(t, t->s);
 }
 
+//reorganiser l'arbre
+/*
+s : sommet à partir du quel on commence la reorganisation
+*/
 void reorganiserAsc(TasMin *t, int s) {
-  
+  if (s != RACINE) {
+    if (t->arbre[s] < pere(s))
+    {
+      permuter(t, s, s/2);
+      reorganiserAsc(t, s/2);
+    } 
+    
+  }
 }
+
