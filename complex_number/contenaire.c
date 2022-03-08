@@ -59,3 +59,11 @@ Complex  valeurContenaire(Objet tab[], int n ){
     return c;
 }
 
+void printContenaire(Objet tab[], int n ){
+    for (int i = 0; i<n; i++){
+        if (tab[i].b == true){
+            C_print(tab[i].c);
+        }
+    }
+}
+
