@@ -26,7 +26,7 @@ s : sommet à partir du quel on commence la reorganisation
 */
 void reorganiserAsc(TasMin *t, int s) {
   if (s != RACINE) {
-    if (t->arbre[s] < pere(s))
+    if (t->arbre[s] < pere(t, s))
     {
       permuter(t, s, s/2);
       reorganiserAsc(t, s/2);
@@ -37,4 +37,10 @@ void reorganiserAsc(TasMin *t, int s) {
 
 char pere(TasMin *t, int s) {
   return t->arbre[s/2];
+}
+
+char permuter(TasMin *t, int s2) {
+  char a = t->arbre[s1];
+  t->arbre[s1] = t->arbre[s2];
+  t->arbre[s2] = a;
 }
