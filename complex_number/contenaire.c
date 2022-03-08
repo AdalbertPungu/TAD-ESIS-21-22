@@ -34,7 +34,14 @@ void ajoutContenaire(Objet tab[], int n, Complex c ){
     }
 }
 
-
+void supprimerContenaire(Objet tab[], int n , Complex  ob){
+    for (int i = 0; i<n;i++) {        
+        if (C_compare(tab[i].c, ob)){
+            tab[i].b = false;
+            break;
+        }
+    }
+}
 
 void detruireContenaire(Objet tab[], int n){
     for (int i= 0;i<n;i++){
