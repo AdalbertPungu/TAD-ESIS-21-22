@@ -6,3 +6,7 @@ void creerTas(TasMin *t, char x) {
   t->arbre[1]= x;
 }
 
+//affiche la valeur
+char valeur(TasMin *t) {
+  return t->arbre[1];
+}
