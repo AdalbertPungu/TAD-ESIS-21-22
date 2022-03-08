@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <math.h>
-#include "complex.c"
+#include "contenaire.h"
 
 #define Dim 10
 
