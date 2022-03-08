@@ -5,7 +5,7 @@
 #define RACINE 1
 typedef struct TasMin
 {
-  int  arbre[T_MAX];
+  int arbre[T_MAX];
   int s;
   int taille;
 } TasMin;
@@ -16,4 +16,4 @@ void entasser(TasMin *t, char x);
 void supprimer(TasMin *t);
 void reorganiserAsc(TasMin *t, int s);
 char pere(TasMin *t, int s);
-char permuter(TasMin *t, int s2);
+char permuter(TasMin *t, int s1, int s2);
