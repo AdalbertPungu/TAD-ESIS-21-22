@@ -14,3 +14,13 @@ void creerListe(listSC *L) {
 
   L->tab[i].idSuiv = NIL; 
 }
+
+curseur prendreCellule(listSC *L) {
+  curseur n = NIL;
+  if (L->prLibre != NIL) {
+    n = L->prLibre;
+    L->prLibre = L->tab[n].idSuiv;
+  }
+  return n;
+}
+
