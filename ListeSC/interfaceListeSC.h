@@ -21,3 +21,34 @@ typedef struct listSC{
   curseur prLibre;
 }listSC;
 
+/*  IMPLEMENTATION DES PRIMITIVES PAR TABLEAU STATIQUE */
+
+void debutListe(listSC *L);
+
+void suivant(listSC *L);
+
+int listeVide(listSC *L);
+
+char valeur(listSC *L);
+
+curseur getCleListe(listSC *L);
+
+void setCleListe(listSC *L, curseur p);
+
+curseur prendreCellule(listSC *L);
+
+void rendreCelluleA(listSC *L, curseur p );
+
+void insereEnTete(listSC *L, char  c);
+
+void insereApres(listSC *L, char  c);
+
+int listePleine(listSC *L);
+
+void supprimeEnTete(listSC *L);
+
+void supprimeApres(listSC *L);
+
+void creerListe(listSC *L);
+
+/*   FIN      DE PRIMITIVES       */
