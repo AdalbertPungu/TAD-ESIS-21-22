@@ -10,5 +10,5 @@ void creerPile(pile p) {
 }
 
 int pilePleine(pile p) {
-    
+  return (p->taille == TAILLEMax);
 }
