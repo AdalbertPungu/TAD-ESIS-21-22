@@ -44,6 +44,6 @@ void depiler(pile p) {
 }
 
 char valeur(pile p) {
-  
+  return p->tab[p->sommet].val;
 }
 
