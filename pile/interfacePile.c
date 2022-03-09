@@ -43,3 +43,7 @@ void depiler(pile p) {
   }
 }
 
+char valeur(pile p) {
+  
+}
+
