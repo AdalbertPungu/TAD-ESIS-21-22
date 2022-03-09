@@ -70,3 +70,7 @@ char valeur(listSC *L) {
     return ' ';
   }
 }
+
+curseur getCleListe(listSC *L) {
+  return L->cle;
+}
