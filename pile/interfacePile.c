@@ -36,3 +36,6 @@ void empiler(pile p, char val) {
 
 }
 
+void depiler(pile p) {
+  
+}
