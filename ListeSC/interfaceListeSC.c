@@ -45,3 +45,9 @@ void insereApres(listSC *L, char c) {
   }
 }
 
+void suivant(listSC *L) {
+  if (L->cle != NIL) {
+    L->cle = L->tab[L->cle].idSuiv;
+  }
+}
+
