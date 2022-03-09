@@ -63,3 +63,10 @@ int listeVide(listSC *L) {
   }
 }
 
+char valeur(listSC *L) {
+  if (L->cle != NIL) {
+    return L->tab[L->cle].val;
+  } else {
+    return ' ';
+  }
+}
