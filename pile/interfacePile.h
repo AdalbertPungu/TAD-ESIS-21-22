@@ -8,3 +8,10 @@
 #define TAILLEMax  10     
 #define NIL -1
 
+typedef int curseur;
+
+typedef struct cellule{
+  char val;
+  curseur prec;
+} Cellule;
+
