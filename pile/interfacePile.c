@@ -9,3 +9,6 @@ void creerPile(pile p) {
   }
 }
 
+int pilePleine(pile p) {
+    
+}
