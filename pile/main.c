@@ -25,5 +25,12 @@ int main(int argc, char const *argv[])
 
   printf("%c", valeur(&p));
 
+  depiler(&p);
+  empiler(&p, 'a');
+  empiler(&p, 'b');
+
+  printf("\n%d", p.taille);
+  printf("%c", valeur(&p));
+
   return 0;
 }
