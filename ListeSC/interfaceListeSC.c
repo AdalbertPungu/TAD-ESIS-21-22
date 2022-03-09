@@ -24,3 +24,13 @@ curseur prendreCellule(listSC *L) {
   return n;
 }
 
+void insereEnTete(listSC *L, char c) {
+  curseur n = prendreCellule(L);
+  if (n != NIL) {
+    L->taille++;
+    L->cle = n;
+    L->tab[n].val = c;
+    L->tab[n].idSuiv = L->premier;
+    L->premier = n;
+  }
+}
