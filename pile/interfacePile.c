@@ -47,3 +47,7 @@ char valeur(pile p) {
   return p->tab[p->sommet].val;
 }
 
+// efface complement tout ce qui a dans la pile
+void detruire(pile p) {
+  
+}
