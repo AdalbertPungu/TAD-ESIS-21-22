@@ -37,5 +37,9 @@ void empiler(pile p, char val) {
 }
 
 void depiler(pile p) {
-  
+  if (!pileVide(p)) {
+    p->sommet = p->tab[p->sommet].prec;
+    p->taille--;
+  }
 }
+
