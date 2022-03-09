@@ -4,6 +4,11 @@
 
 int main(int argc, char const *argv[])
 {
-  /* code */
+  Pile p;
+
+  creerPile(&p);
+  
+  
+
   return 0;
 }
