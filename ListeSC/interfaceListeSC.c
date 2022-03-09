@@ -55,3 +55,11 @@ void debutList(listSC *L) {
   L->cle = L->premier;
 }
 
+int listeVide(listSC *L) {
+  if (L->taille == 0) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
