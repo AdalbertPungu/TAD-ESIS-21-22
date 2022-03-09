@@ -51,3 +51,7 @@ void suivant(listSC *L) {
   }
 }
 
+void debutList(listSC *L) {
+  L->cle = L->premier;
+}
+
