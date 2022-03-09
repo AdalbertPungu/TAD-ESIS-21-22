@@ -3,7 +3,7 @@
 
 #define T_MAX 100
 #define RACINE 1
-#define VIDE 1
+#define VIDE '-'
 typedef struct TasMin
 {
   int arbre[T_MAX];
