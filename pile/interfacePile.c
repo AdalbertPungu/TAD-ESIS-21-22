@@ -49,5 +49,7 @@ char valeur(pile p) {
 
 // efface complement tout ce qui a dans la pile
 void detruire(pile p) {
-  
+  p->sommet = NULL;
+  p->taille = NIL;
+  p->tab[TAILLEMax];
 }
