@@ -74,3 +74,8 @@ char valeur(listSC *L) {
 curseur getCleListe(listSC *L) {
   return L->cle;
 }
+
+void setCleListe(listSC *L, curseur p) {
+  L->cle = p;
+}
+
