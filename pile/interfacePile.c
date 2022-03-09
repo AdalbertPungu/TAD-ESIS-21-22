@@ -16,3 +16,7 @@ int pilePleine(pile p) {
 int pileVide(pile p) {
   return (p->taille == 0);
 }
+
+void empiler(pile p, char val) {
+  
+}
