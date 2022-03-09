@@ -14,5 +14,5 @@ int pilePleine(pile p) {
 }
 
 int pileVide(pile p) {
-  
+  return (p->taille == 0);
 }
