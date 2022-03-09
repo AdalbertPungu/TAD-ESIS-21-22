@@ -34,3 +34,14 @@ void insereEnTete(listSC *L, char c) {
     L->premier = n;
   }
 }
+
+void insereApres(listSC *L, char c) {
+  curseur n = prendreCellule(L);
+  if (n != NIL) {
+    L->taille++;
+    L->tab[n].val = c;
+    L->tab[n].idSuiv = L->tab[L->cle].idSuiv;
+    L->tab[L->cle].idSuiv = n;
+  }
+}
+
