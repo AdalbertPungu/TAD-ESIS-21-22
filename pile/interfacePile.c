@@ -18,5 +18,21 @@ int pileVide(pile p) {
 }
 
 void empiler(pile p, char val) {
-  
+
+  if (!pilePleine(p)) {
+
+    if (pileVide(p)) {
+      p->sommet = 0;
+      p->tab[p->sommet].val = val;
+      p->taille++;
+
+    }else{
+      p->tab[p->sommet+1].prec = p->sommet;
+      p->tab[p->sommet+1].val = val;
+      p->sommet = p->sommet+1;
+      p->taille++;
+    }
+  }
+
 }
+
