@@ -21,3 +21,12 @@ typedef struct pile{
   curseur sommet;
 }Pile, *pile;
 
+// primitives
+
+void creerPile(pile p);
+int pilePleine(pile p);
+int pileVide(pile p);
+void empiler(pile p, char val);
+void depiler(pile p);
+char valeur(pile p);
+void detruire(pile p);
