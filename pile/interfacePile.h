@@ -15,3 +15,9 @@ typedef struct cellule{
   curseur prec;
 } Cellule;
 
+typedef struct pile{
+  int taille;
+  Cellule tab[TAILLEMax];
+  curseur sommet;
+}Pile, *pile;
+
