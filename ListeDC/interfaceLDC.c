@@ -49,3 +49,21 @@ void insererEntete(LDC L, char c) {
     L->taille++;    
 }
 
+void insererApres(LDC L, char c) {
+    curseur cel = creerCellule(c);
+    if (L->taille == 0) {
+        insererEntete(L, c);
+    }else{
+        cel->celSuiv = L->cle->celSuiv;
+        cel->celPrec = L->cle;
+        L->cle->celSuiv->celPrec = cel;
+        L->cle->celSuiv = cel;
+        L->taille++;
+        if (L->cle->celSuiv == NIL) {
+            setQueue(L);
+            L->celEnqueue = L->cle;
+            L->cle = L->cle->celPrec;
+        }
+    }
+}
+
