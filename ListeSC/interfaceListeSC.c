@@ -94,3 +94,11 @@ void rendreCelluleA(listSC *L, curseur p) {
   L->prLibre = p;
 }
 
+void supprimeEnTete(listSC *L) {
+  curseur suiv = L->tab[L->premier].idSuiv;
+  L->taille--;
+  rendreCelluleA(L, L->premier);
+  L->premier = suiv;
+  L->cle = L->premier;
+}
+
