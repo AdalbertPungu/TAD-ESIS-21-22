@@ -25,3 +25,11 @@ struct ListDC
     curseur cle;
 };
 
+curseur creerCellule(char c);
+LDC creerLDC();
+void suivant(LDC L);
+void setQueue(LDC L);
+void insererEntete(LDC L, char c);
+void insererApres(LDC L, char c);
+void debutList(LDC L);
+
