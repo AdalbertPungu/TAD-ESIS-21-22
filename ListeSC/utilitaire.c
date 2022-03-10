@@ -22,3 +22,19 @@ void afficherListe(listSC *L) {
     printf("\n");
 }
 
+void supprimer(char *s, char c) {
+    listSC L = tranStrToLSC(s);
+    curseur tampon = NIL;
+
+    while (getCleListe(&L) != NIL)
+    {
+        tampon = getCleListe(&L);
+        suivant(&L);
+        if (valeur(&L) == c) {
+            setCleListe(&L, tampon);
+            supprimeApres(&L);
+        }
+    }
+    afficherListe(&L);    
+}
+
