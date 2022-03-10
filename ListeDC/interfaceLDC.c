@@ -67,3 +67,7 @@ void insererApres(LDC L, char c) {
     }
 }
 
+void debutList(LDC L) {
+
+}
+
