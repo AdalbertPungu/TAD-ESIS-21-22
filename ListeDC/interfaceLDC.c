@@ -11,3 +11,15 @@ curseur creerCellule(char c)
     return cel;
 }
 
+LDC creerLDC() {
+    LDC L;
+    L = (LDC)malloc(sizeof(ListDC));
+    if (L != NIL) {
+        L->taille = 0;
+        L->celEntete = NIL;
+        L->celEnqueue = NIL;
+        L->cle = NIL;
+    }
+    return L;
+}
+
