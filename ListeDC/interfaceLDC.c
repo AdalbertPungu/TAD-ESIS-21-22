@@ -38,3 +38,14 @@ void setQueue(LDC L) {
     }
 }
 
+void insererEntete(LDC L, char c) {
+    curseur cel = creerCellule(c);
+    if (L->taille == 0) {
+        L->celEnqueue = cel;
+    }
+    cel->celSuiv = L->celEntete;
+    L->celEntete = cel;
+    L->cle = cel;
+    L->taille++;    
+}
+
