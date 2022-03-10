@@ -23,3 +23,9 @@ LDC creerLDC() {
     return L;
 }
 
+void suivant(LDC L) {
+    if (L->cle != NIL) {
+        L->cle = L->cle->celSuiv;
+    }
+}
+
