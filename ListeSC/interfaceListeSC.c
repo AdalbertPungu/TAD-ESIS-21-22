@@ -79,3 +79,13 @@ void setCleListe(listSC *L, curseur p) {
   L->cle = p;
 }
 
+void afficherListe(listSC *L) {
+    debutList(L);
+    while (getCleListe(L) != NIL)
+    {
+        printf("%c", valeur(L));
+        suivant(L);
+    }
+    printf("\n");
+}
+
