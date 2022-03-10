@@ -89,3 +89,8 @@ void afficherListe(listSC *L) {
     printf("\n");
 }
 
+void rendreCelluleA(listSC *L, curseur p) {
+  L->tab[p].idSuiv = L->prLibre;
+  L->prLibre = p;
+}
+
