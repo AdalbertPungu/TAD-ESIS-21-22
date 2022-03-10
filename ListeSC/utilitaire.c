@@ -10,3 +10,15 @@ listSC tranStrToLSC(char *s) {
   return L;
 }
 
+void afficherListe(listSC *L) {
+    curseur cle = getCleListe(L);
+    debutList(L);
+    while (getCleListe(L) != NIL)
+    {
+        printf("%c", valeur(L));
+        suivant(L);
+    }
+    setCleListe(L, cle);
+    printf("\n");
+}
+
