@@ -1,4 +1,13 @@
+//#include "objet.h"
 
+struct sommet
+{
+  objet info;
+  sommet gauche, droit, pere;
+};
+
+typedef struct sommet *sommet;
+typedef sommet arbreBinaire;
 
 sommet creerArbreBinaire(objet racine);
 void detruireSommet(sommet s);
