@@ -68,6 +68,7 @@ void insererApres(LDC L, char c) {
 }
 
 void debutList(LDC L) {
-
+    //L->cle = L->premier;
+    //L->cle = L->celEntete;
 }
 
