@@ -79,7 +79,7 @@ void setCleListe(listSC *L, curseur p) {
   L->cle = p;
 }
 
-void afficherListe(listSC *L) {
+void afficherListe1(listSC *L) {
     debutList(L);
     while (getCleListe(L) != NIL)
     {
