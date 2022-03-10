@@ -29,3 +29,12 @@ void suivant(LDC L) {
     }
 }
 
+void setQueue(LDC L) {
+    if (L->taille == 1) {
+        L->celEnqueue = L->celEntete;
+    }
+    while(L->cle->celSuiv != NIL) {
+        suivant(L);
+    }
+}
+
