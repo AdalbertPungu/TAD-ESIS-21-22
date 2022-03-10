@@ -102,3 +102,13 @@ void supprimeEnTete(listSC *L) {
   L->cle = L->premier;
 }
 
+void supprimeApres(listSC *L) {
+    if (L->tab[L->cle].idSuiv != NIL) {
+        curseur idSup = L->tab[L->cle].idSuiv;
+        curseur n = L->tab[idSup].idSuiv;
+        L->taille--;
+        L->tab[L->cle].idSuiv = n;
+        rendreCelluleA(L, idSup);
+    }
+}
+
