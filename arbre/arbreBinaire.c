@@ -22,3 +22,7 @@ void ajouterFilsGauche(sommet s, objet o) {
   ab->info = o;
   s->gauche = ab;
 }
+
+void ajouterFilsDroit(sommet s, objet o) {
+  
+}
