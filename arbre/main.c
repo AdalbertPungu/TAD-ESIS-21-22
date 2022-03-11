@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "arbreBinaire.h"
+#include "arbreBinaire.c"
 
 int main(int argc, char const *argv[])
 {
-  /* code */
+  sommet a = creerArbreBinaire('A');
+  printf("%c", a->info);
+  
   return 0;
 }
