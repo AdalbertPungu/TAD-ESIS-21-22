@@ -16,3 +16,9 @@ sommet creerArbreBinaire(objet racine) {
   return NULL;
 }
 
+void ajouterFilsGauche(sommet s, objet o) {
+  sommet ab = (sommet) malloc(sizeof (struct sommet));
+  ab->pere = s;
+  ab->info = o;
+  s->gauche = ab;
+}
